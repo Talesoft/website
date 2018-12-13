@@ -1,0 +1,6 @@
+/.idea
+/node_modules
+/.env
+/bundle/index.js
+/public/index.js
+/public/index.css

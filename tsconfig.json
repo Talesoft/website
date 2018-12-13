@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "*": ["types/*"] },
+    "module": "esnext",
+    "target": "es2018",
+    "alwaysStrict": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "jsx": "react"
+  }
+}
