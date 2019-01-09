@@ -1,7 +1,7 @@
 
 const {resolve} = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 
@@ -13,6 +13,7 @@ module.exports = env =>
 
     const options = {
         mode: env.APP_ENV,
+        devtool: env.APP_ENV === 'development' ? 'inline-source-map ' : undefined,
         module: {
             rules: [
                 {
@@ -63,13 +64,11 @@ module.exports = env =>
                 new MiniCssExtractPlugin({
                     filename: 'index.css'
                 }),
-                new UglifyJsPlugin({
-                    cache: true,
-                    parallel: true,
-                    sourceMap: env.APP_ENV === 'development'
-                }),
                 new OptimizeCSSAssetsPlugin({})
             ],
+            optimization: {
+                minimizer: [new TerserPlugin()],
+            },
         }),
     ];
 };
