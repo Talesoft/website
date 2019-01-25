@@ -1,0 +1,88 @@
+
+@import '../common';
+
+$Sidebar-width: 260px;
+$Sidebar-width-contracted: 80px;
+$Sidebar-background-color: $gray-200;
+$Sidebar-link-color: $gray-800;
+$Sidebar-link-border-color: $gray-400;
+$Sidebar-link-hover-color: $gray-400;
+$Sidebar-item-expanded-background-color: $gray-500;
+$Sidebar-item-expanded-link-background-color: $gray-700;
+$Sidebar-item-expanded-link-color: $gray-200;
+
+.Sidebar {
+    &, & > .Sidebar__container {
+        width: $Sidebar-width;
+    }
+
+    .Sidebar__container {
+        background-color: $Sidebar-background-color;
+        display: flex;
+        flex-flow: column nowrap;
+        position: fixed;
+        height: 100vh;
+
+        .Sidebar__nav {
+            flex-grow: 1;
+
+            &, & .Sidebar__nav--sub {
+                flex-flow: column nowrap;
+            }
+
+            .nav-link {
+                color: $Sidebar-link-color;
+                border-bottom: 1px solid $Sidebar-link-border-color;
+
+                &:hover {
+                    background: $Sidebar-link-hover-color;
+                }
+            }
+
+            .Sidebar__nav-item {
+                &.Sidebar__nav-item--open {
+                    background: $Sidebar-item-expanded-background-color;
+
+                    & > .nav-link {
+                        color: $Sidebar-item-expanded-link-color;
+                        background: $Sidebar-item-expanded-link-background-color;
+                    }
+                }
+
+                & > .Sidebar__nav--sub {
+                    & > .nav-link {
+                        padding-left: 40px;
+                    }
+                }
+            }
+        }
+
+        .Sidebar__logo {
+            padding: 20px;
+            display: block;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+
+    &.Sidebar--contracted {
+        &, & > .Sidebar__container {
+            width: $Sidebar-width-contracted;
+        }
+
+        .Sidebar__nav {
+            .nav-link {
+                text-align: center;
+                .fas, .fab, .far {
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+    }
+}
+
+.App .App__sidebar {
+}

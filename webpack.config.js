@@ -49,7 +49,7 @@ module.exports = env =>
             output: {
                 filename: 'index.js',
                 path: resolve(__dirname, 'public'),
-                publicPath: resolve(__dirname, 'public')
+                publicPath: '/'
             },
             module: Object.assign({}, options.module, {
                 rules: [
@@ -57,6 +57,16 @@ module.exports = env =>
                     {
                         test: /\.s?css$/,
                         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+                    },
+                    {
+                        test: /\.(eot|woff2?|ttf|svg)$/,
+                        use: [{
+                            loader: 'file-loader',
+                            options: {
+                                name: '[name].[ext]',
+                                outputPath: 'fonts/'
+                            }
+                        }]
                     }
                 ]
             }),

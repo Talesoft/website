@@ -1,6 +1,15 @@
 
-@import "~bootstrap/scss/bootstrap";
+@import './common';
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 
-body {
-  font-size: 12px;
+html, body, #root {
+    min-height: 100vh;
+}
+
+img, svg {
+    width: 100%;
 }

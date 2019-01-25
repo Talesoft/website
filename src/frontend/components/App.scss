@@ -1,0 +1,11 @@
+
+.App {
+    display: flex;
+    min-height: 100vh;
+    align-items: stretch;
+
+    .App__content {
+        flex-grow: 1;
+        padding: 20px;
+    }
+}

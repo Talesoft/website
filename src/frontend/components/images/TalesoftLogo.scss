@@ -1,0 +1,32 @@
+
+$TalesoftLogo-text-dark: #333;
+$TalesoftLogo-text-light: #eee;
+$TalesoftLogo-red: #ea4f50;
+$TalesoftLogo-yellow: #ef9b50;
+$TalesoftLogo-green: #51af43;
+$TalesoftLogo-blue: #338991;
+
+.TalesoftLogo {
+    &.TalesoftLogo--color-mode-light, &.TalesoftLogo--color-mode-monochrome-light {
+        .TalesoftLogo__letter {fill: $TalesoftLogo-text-dark;}
+    }
+
+    &.TalesoftLogo--color-mode-dark, &.TalesoftLogo--color-mode-monochrome-dark {
+        .TalesoftLogo__letter {fill: $TalesoftLogo-text-light;}
+    }
+
+    &.TalesoftLogo--color-mode-monochrome-light {
+        .TalesoftLogo__shape {fill: $TalesoftLogo-text-dark;}
+    }
+
+    &.TalesoftLogo--color-mode-monochrome-dark {
+        .TalesoftLogo__shape {fill: $TalesoftLogo-text-light;}
+    }
+
+    &.TalesoftLogo--color-mode-light, &.TalesoftLogo--color-mode-dark {
+        .TalesoftLogo__shape--index-0 {fill: $TalesoftLogo-red;}
+        .TalesoftLogo__shape--index-1 {fill: $TalesoftLogo-yellow;}
+        .TalesoftLogo__shape--index-2 {fill: $TalesoftLogo-green;}
+        .TalesoftLogo__shape--index-3 {fill: $TalesoftLogo-blue;}
+    }
+}

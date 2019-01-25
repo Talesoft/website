@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+	<style type="text/css">
+		.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#E94F50;}
+		.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#EE994F;}
+		.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#51AE43;}
+		.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#338890;}
+	</style>
+
+	<path class="st0" d="M80,0C35.8,0,0,35.8,0,80v840c0,44.2,35.8,80,80,80s80-35.8,80-80V160h760c44.2,0,80-35.8,80-80S964.2,0,920,0
+		H80z"/>
+
+	<path class="st1" d="M880,340v600c0,33.1,26.9,60,60,60s60-26.9,60-60V280c0-33.1-26.9-60-60-60H280c-33.1,0-60,26.9-60,60
+		s26.9,60,60,60H880z"/>
+	<path class="st2" d="M775,400c-24.9,0-45,20.1-45,45v475H260c-22.1,0-40,17.9-40,40s17.9,40,40,40h515h5c22.1,0,40-17.9,40-40
+		c0-0.8,0-1.6-0.1-2.4c0.1-0.9,0.1-1.7,0.1-2.6V445C820,420.1,799.9,400,775,400z"/>
+	<path class="st3" d="M220,827c0,18.2,14.8,33,33,33h384c18.2,0,33-14.8,33-33s-14.8-33-33-33H286V433c0-18.2-14.8-33-33-33
+		s-33,14.8-33,33V827z"/>
+</svg>

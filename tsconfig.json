@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "commonjs",
-    "target": "es2016",
+    "module": "esnext",
+    "target": "es2017",
     "alwaysStrict": true,
     "experimentalDecorators": true,
     "noImplicitAny": true,
@@ -12,6 +12,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true,
+    "allowJs": true,
     "strict": true,
     "jsx": "react"
   }

@@ -67,7 +67,7 @@ async function respondFile(stream: ServerHttp2Stream, path: string, push: boolea
     try {
         stats = await promisify(stat)(fullPath);
     } catch (err) {
-        console.error(`${prefix}> ${path} not found ot faulty (${err.code})`);
+        console.error(`${prefix}> ${path} not found or faulty (${err.code})`);
         return respondStatus(stream, HTTP_STATUS_NOT_FOUND);
     }
 
@@ -137,5 +137,5 @@ server.on('stream', async (stream, headers) => {
 
 server.listen(parseInt(<string>APP_PORT), <string>APP_HOST, () =>
 {
-    console.log(`Server listening on ${APP_HOST}:${APP_PORT}`)
+    console.log(`Server listening on https://${APP_HOST}:${APP_PORT}/`)
 });
